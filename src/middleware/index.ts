@@ -9,9 +9,7 @@ const verificarIsbn = async (req: express.Request, res: express.Response, next: 
             throw new Error('ISBN é obrigatório');
         }
         
-        if (isbn.length !== 10 && isbn.length !== 13) {
-            console.log("dksnfiudsbfiusbfiudsvg");
-            
+        if (isbn.length !== 10 && isbn.length !== 13) {            
             throw new Error("O ISBN deve ter 10 ou 13 dígitos");
         }
 
